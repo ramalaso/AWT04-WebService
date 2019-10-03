@@ -1,10 +1,5 @@
-#my dockerfile
-
-
-# add dockerfile to the DEV project (repo forked)
-# fix dockerfile
-# update the Readme file of the DEV project (repo forked)
-# Install Jenkins Server in Linux (ubuntu instance)
-# Get running Jenkins Server
-# Make a report of all tasks available for gradle available
-
+FROM openjdk:11.0.4
+COPY . /AWT04-WebService
+ENTRYPOINT /bin/bash
+EXPOSE 8080
+CMD java -jar spring.jar
